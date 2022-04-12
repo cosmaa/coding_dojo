@@ -1,0 +1,40 @@
+<div class="bod-cont">
+  <div id="square_c">
+    Hello
+  </div>
+</div>
+
+
+<style>
+
+  .bod-cont {
+    width: 40vmin;
+    height: 40vmin;
+    margin: 4vmin auto;
+    padding: 4vmin ;
+    box-shadow: 0 0 105px -1px #666 inset;
+    border: 3px groove #ccc;
+  }
+  #square_c {
+    position: relative;
+    height: 5vmin;
+    width: 5vmin;
+    border: 5px solid aquamarine;
+    border-radius: 20px;
+    background: cadetblue;
+    padding: 20px;
+    overflow: hidden;
+    animation-duration: 12s;
+    animation-name: movesquare_c;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes movesquare_c {
+    100% {
+      margin: 0;
+      transform:rotateZ(1800deg);
+    }
+  }
+
+</style>
